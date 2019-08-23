@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html style="background-color:black;">
+<body>
+  <h1 style = "color:white;">
+    Friends
+</h1>
+<h3 style = "color:white;">
+Name, Age, Location (Optional)
+</h3>
+<h3 style = "color:white;">
+Bio...
+</h3>
+
+<head>
+  <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'My Friends')">My Friends</button>
+    <button class="tablinks" onclick="openCity(event, 'Game Room')">Game Room</button>
+    <button class="tablinks" onclick="openCity(event, 'Video Call')">Video Call</button>
+    <button class="tablinks" onclick="openCity(event, 'Events')">Events</button>
+  </div>
+
+
+
+  <!-- Tab content -->
+  <div id="My Friends" class="tabcontent">
+    <h3>My Friends</h3>
+    <p>London is the capital city of England.</p>
+    <button onClick="myFunction()">Click me</button>
+    <p id="demo">
+  </div>
+
+  <div id="Game Room" class="tabcontent">
+    <h3>Game Room</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="Video Call" class="tabcontent">
+    <h3>Video Call</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div
+
+  <div id="Events" class="tabcontent">
+    <h3>Events</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <script src="profileJS.js"></script>
+
+<!--<h2>Vertical Navigation Bar</h2>
+
+<ul>
+  <li><a href="#My Friends">My Friends</a></li>
+  <li><a href="#Game Room">Game Room</a></li>
+  <li><a href="#Video Call">Video Call</a></li>
+  <li><a href="#Events">Events</a></li>
+</ul>
+
+<div id="My Friends" class="tabcontent">
+  <p>
+
+  </p>
+</div>

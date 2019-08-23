@@ -1,0 +1,77 @@
+.wrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .add-btn {
+    width: 130px;
+    height: 20px;
+    padding: 8px 20px;
+    background: #f6f7f9;
+    border: 1px solid #4b4f56;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background: #e9ebee;
+    }
+    .plus {
+      width: 16px;
+      height: 2px;
+      margin-top: 10px;
+      background: #4b4f56;
+      display: inline-block;
+      vertical-align: top;
+      transition: transform .5s;
+      &:before {
+        margin: -7px 0 0 7px;
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 16px;
+        background: #4b4f56;
+        transition: margin .5s;
+      }
+      &.tick {
+        transform: translateX(6px) rotate(-45deg);
+        &:before {
+          height: 8px;
+          margin: -7px 0 0 0;
+        }
+      }
+    }
+    .text {
+      margin: 0 5px;
+      display: inline-block;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+      line-height: 20px;
+      vertical-align: top;
+      color: #4b4f56;
+      &.move {
+        margin: 0 15px;
+      }
+      > .add-text {
+        opacity: 1;
+        transition: opacity .5s;
+        &.out {
+          opacity: 0;
+        }
+      }
+    }
+    .user-wrap {
+      display: inline-block;
+      > i {
+        font-size: 20px;
+        color: #4b4f56;
+        &.two {
+          position: absolute;
+          margin: -21px 0 0 12px;
+          opacity: 0;
+          transition: opacity .5s;
+          &.in {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

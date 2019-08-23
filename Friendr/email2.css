@@ -1,0 +1,61 @@
+
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+}
+
+a:hover {
+  background-color: purple;
+  color: black;
+}
+
+.previous {
+  background-color: purple;
+  color: black;
+}
+
+.next {
+  background-color: purple;
+  color: purple;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: "white";
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: purple;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: "purple";
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #"purple";
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid "purple";
+  border-top: none;
+}
